@@ -1,0 +1,19 @@
+exclude: '.pixi/'
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+    - id: check-yaml
+    - id: check-toml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+
+- repo: local
+  hooks:
+  - id: pre-commit
+    name: pre-commit
+    stages: [pre-commit, pre-push]
+    language: system
+    entry: pixi run ruff format main.py
+    types: [python]
+    pass_filenames: false

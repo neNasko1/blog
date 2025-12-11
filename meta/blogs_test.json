@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "url": "https://scottaaronson.blog/?feed=rss2",
+      "tags": [ "cs", "complexity", "quantum" ]
+    },
+    {
+      "url": "https://bernsteinbear.com/feed.xml",
+      "tags": [ "cs", "compilers"]
+    },
+    {
+      "url": "https://www.dogeystamp.com/atom.xml",
+      "tags": [ "cs", "niche" ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Roll</title>
+</head>
+<body>
+    <ul>
+        {% for article in blog_roll.accumulate_articles() %}
+            <li>
+                <span>
+                     {{ article._blog.title }} ({{ article.date.date() }})
+                </span>
+                <h2>
+                    <a href="{{ article.link }}">
+                        {{ article.title }}
+                    </a>
+                </h2>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

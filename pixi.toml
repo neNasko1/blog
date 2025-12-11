@@ -1,0 +1,30 @@
+[workspace]
+authors = ["neNasko1 <nasko119@gmail.com>"]
+channels = ["conda-forge"]
+name = "blog"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.2,<3.15"
+pydantic = ">=2.12.5,<3"
+requests = ">=2.32.5,<3"
+jinja2 = ">=3.1.6,<4"
+
+[pypi-dependencies]
+feedparser = ">=6.0.12, <7"
+
+[feature.lint.dependencies]
+pre-commit = "*"
+ruff = "*"
+mypy = "*"
+
+[feature.lint.tasks]
+pre-commit-install = "pre-commit install"
+pre-commit-run = "pre-commit run -a"
+
+[environments]
+default = []
+lint = { features = ["lint"], no-default-feature = true }
