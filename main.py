@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 import os
+import argparse
 
 
 class Article(BaseModel):
@@ -98,4 +99,14 @@ def generate_blog_roll(blog_roll_url: str):
         f.write(output)
 
 
-generate_blog_roll("meta/blogs.json")
+def main():
+    parser = argparse.ArgumentParser(description="generate blog")
+    parser.add_argument("blog_roll", help="path to blog roll")
+
+    args = parser.parse_args()
+
+    generate_blog_roll(args.blog_roll)
+
+
+if __name__ == "__main__":
+    main()
