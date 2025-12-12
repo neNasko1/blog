@@ -90,12 +90,17 @@ def generate_blog_roll(blog_roll_url: str):
     blogs_json = Path(blog_roll_url).read_text()
     blog_roll = BlogRoll.model_validate_json(blogs_json)
 
-    env = Environment(loader=FileSystemLoader("meta/templates"))
-    template = env.get_template("blog_roll.jinja2")
-
-    output = template.render(blog_roll=blog_roll)
     os.makedirs("static", exist_ok=True)
+    env = Environment(loader=FileSystemLoader("meta/templates"))
+
     with open("static/blog_roll.html", "w+") as f:
+        template = env.get_template("blog_roll.jinja2")
+        output = template.render(blog_roll=blog_roll)
+        f.write(output)
+
+    with open("static/index.html", "w+") as f:
+        template = env.get_template("index.jinja2")
+        output = template.render()
         f.write(output)
 
 
