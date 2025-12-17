@@ -183,6 +183,18 @@
     {
       "url": "https://mmapped.blog/feed.xml",
       "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://cofault.com/feed.xml",
+      "tags": [ "cs", "formal" ]
+    },
+    {
+      "url": "https://doisinkidney.com/rss.xml",
+      "tags": [ "cs", "formal", "algorithms" ]
+    },
+    {
+      "url": "https://leancrew.com/all-this/feed/",
+      "tags": [ "misc" ]
     }
   ]
 }
