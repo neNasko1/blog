@@ -42,7 +42,7 @@
     },
     {
       "url": "https://strongly-typed-thoughts.net/blog/feed",
-      "tags": [ "cs","plt" ]
+      "tags": [ "cs", "plt" ]
     },
     {
       "url": "https://ohadravid.github.io/index.xml",
@@ -190,11 +190,27 @@
     },
     {
       "url": "https://doisinkidney.com/rss.xml",
-      "tags": [ "cs", "formal", "algorithms" ]
+      "tags": [ "cs", "formal", "algorithms", "research" ]
     },
     {
       "url": "https://leancrew.com/all-this/feed/",
       "tags": [ "misc" ]
+    },
+    {
+      "url": "https://emschwartz.me/feed/?type=rss",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://blog.veritates.love/rss.xml",
+      "tags": [ "cs", "formal", "programming" ]
+    },
+    {
+      "url": "https://amit.prasad.me/rss.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://smallcultfollowing.com/babysteps//atom.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
     }
   ]
 }
