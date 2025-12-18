@@ -138,7 +138,7 @@
     },
     {
       "url": "https://lemire.me/blog/feed/",
-      "tags": [ "cs", "compilers", "research" ]
+      "tags": [ "cs", "compilers", "research", "lowlevel" ]
     },
     {
       "url": "https://gilkalai.wordpress.com/",
@@ -158,11 +158,11 @@
     },
     {
       "url": "https://smallcultfollowing.com/babysteps//atom.xml",
-      "tags": [ "cs", "programming" ]
+      "tags": [ "cs", "programming", "lowlevel" ]
     },
     {
       "url": "https://jyn.dev/atom.xml",
-      "tags": [ "cs", "programming" ]
+      "tags": [ "cs", "programming", "lowlevel" ]
     },
     {
       "url": "https://typesanitizer.com/blog/index.html",
@@ -209,7 +209,7 @@
       "tags": [ "cs", "programming", "lowlevel" ]
     },
     {
-      "url": "https://smallcultfollowing.com/babysteps//atom.xml",
+      "url": "https://blog.guillaume-gomez.fr/rss",
       "tags": [ "cs", "programming", "lowlevel" ]
     }
   ]
