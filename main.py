@@ -1,8 +1,8 @@
 from pydantic import BaseModel, model_validator, PrivateAttr
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Dict
 import feedparser
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import os
 import argparse
@@ -16,12 +16,19 @@ class Article(BaseModel):
 
     @staticmethod
     def from_entry(blog: "Blog", entry: Any):
+        entry_timestamp = (
+            entry.updated_parsed
+            if "updated_parsed" in entry
+            else entry.published_parsed
+        )
+
         ret = Article(
             title=entry.title,
-            date=datetime(*entry.published_parsed[:6]),
+            date=datetime(*entry_timestamp[:6]),
             link=entry.link if "link" in entry else None,
         )
         ret._blog = blog
+
         return ret
 
 
@@ -48,7 +55,6 @@ class Blog(BaseModel):
 
     @model_validator(mode="after")
     def compute_fields(self):
-        print("parsing ", self.url)
         try:
             self.maybe_compute_fields()
         except Exception as e:
@@ -56,6 +62,19 @@ class Blog(BaseModel):
             self.error = str(e)
 
         return self
+
+    def get_last_articles(
+        self,
+        minimum: int = 5,
+        last: int = 10,
+        timeframe: timedelta = timedelta(days=31),
+    ) -> List[Article]:
+        srt_articles = sorted(self.articles, key=lambda x: x.date, reverse=True)
+        relevant = sum(
+            [1 for x in srt_articles if datetime.now() - x.date <= timeframe]
+        )
+        to_show = max(minimum, min(last, relevant))
+        return srt_articles[:to_show]
 
 
 class BlogRoll(BaseModel):
@@ -74,16 +93,29 @@ class BlogRoll(BaseModel):
         self.blogs = dedup_blogs
         return self
 
-    def accumulate_articles(self, last: int = 5) -> List[Article]:
+    def get_shown_articles(self) -> List[Article]:
         unsorted = [
             article
             for blog in self.blogs
-            for article in sorted(blog.articles, key=lambda x: x.date, reverse=True)[
-                :last
-            ]
+            for article in blog.get_last_articles()
             if article.link is not None
         ]
         return sorted(unsorted, key=lambda x: x.date, reverse=True)
+
+    @property
+    def forwarded_info(self) -> Dict[Any]:
+        shown_articles = self.get_shown_articles()
+        return {
+            "articles": {
+                "shown": shown_articles,
+                "shown_count": len(shown_articles),
+                "all_count": sum(len(blog.articles) for blog in self.blogs),
+            },
+            "blogs": {
+                "success": len([x for x in self.blogs if x.error is None]),
+                "all": len([x for x in self.blogs]),
+            },
+        }
 
 
 def generate_blog_roll(blog_roll_url: str):
@@ -95,7 +127,7 @@ def generate_blog_roll(blog_roll_url: str):
 
     with open("static/blog_roll.html", "w+") as f:
         template = env.get_template("blog_roll.jinja2")
-        output = template.render(blog_roll=blog_roll)
+        output = template.render(blog_info=blog_roll.forwarded_info)
         f.write(output)
 
     with open("static/index.html", "w+") as f:

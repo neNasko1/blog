@@ -4,8 +4,10 @@
     <title>Blog Roll</title>
 </head>
 <body>
+    <h2> Blog Roll ({{ blog_info["blogs"]["success"] }} / {{ blog_info["blogs"]["all"] }}) | {{ blog_info["articles"]["shown_count"] }} articles shown. </h2>
+    <hr>
     <ul>
-        {% for article in blog_roll.accumulate_articles() %}
+        {% for article in blog_info["articles"]["shown"] %}
             <li>
                 <span>
                      {{ article._blog.title }} ({{ article.date.date() }})

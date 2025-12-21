@@ -158,7 +158,7 @@
     },
     {
       "url": "https://smallcultfollowing.com/babysteps//atom.xml",
-      "tags": [ "cs", "programming" ]
+      "tags": [ "cs", "programming", "compilers" ]
     },
     {
       "url": "https://jyn.dev/atom.xml",
@@ -194,7 +194,15 @@
     },
     {
       "url": "https://leancrew.com/all-this/feed/",
-      "tags": [ "misc" ]
+      "tags": [ "physics", "misc" ]
+    },
+    {
+      "url": "https://osa1.net/rss.xml",
+      "tags": [ "cs", "plt" ]
+    },
+    {
+      "url": "https://xania.org/feed",
+      "tags": [ "cs", "compilers" ]
     }
   ]
 }
