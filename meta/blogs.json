@@ -42,7 +42,7 @@
     },
     {
       "url": "https://strongly-typed-thoughts.net/blog/feed",
-      "tags": [ "cs","plt" ]
+      "tags": [ "cs", "plt" ]
     },
     {
       "url": "https://ohadravid.github.io/index.xml",
@@ -138,7 +138,7 @@
     },
     {
       "url": "https://lemire.me/blog/feed/",
-      "tags": [ "cs", "compilers", "research" ]
+      "tags": [ "cs", "compilers", "research", "lowlevel" ]
     },
     {
       "url": "https://gilkalai.wordpress.com/",
@@ -158,11 +158,15 @@
     },
     {
       "url": "https://smallcultfollowing.com/babysteps//atom.xml",
+<<<<<<< HEAD
       "tags": [ "cs", "programming", "compilers" ]
+=======
+      "tags": [ "cs", "programming", "lowlevel" ]
+>>>>>>> a4afead5ce1e42c33348a9d45f8d347860183907
     },
     {
       "url": "https://jyn.dev/atom.xml",
-      "tags": [ "cs", "programming" ]
+      "tags": [ "cs", "programming", "lowlevel" ]
     },
     {
       "url": "https://typesanitizer.com/blog/index.html",
@@ -190,7 +194,7 @@
     },
     {
       "url": "https://doisinkidney.com/rss.xml",
-      "tags": [ "cs", "formal", "algorithms" ]
+      "tags": [ "cs", "formal", "algorithms", "research" ]
     },
     {
       "url": "https://leancrew.com/all-this/feed/",
@@ -202,7 +206,23 @@
     },
     {
       "url": "https://xania.org/feed",
-      "tags": [ "cs", "compilers" ]
+      "tags": [ "cs", "compilers", "lowlevel" ]
+    },
+    {
+      "url": "https://emschwartz.me/feed/?type=rss",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://blog.veritates.love/rss.xml",
+      "tags": [ "cs", "formal", "programming" ]
+    },
+    {
+      "url": "https://amit.prasad.me/rss.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://blog.guillaume-gomez.fr/rss",
+      "tags": [ "cs", "programming", "lowlevel" ]
     }
   ]
 }
