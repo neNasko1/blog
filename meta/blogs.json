@@ -194,7 +194,7 @@
     },
     {
       "url": "https://leancrew.com/all-this/feed/",
-      "tags": [ "physics", "misc" ]
+      "tags": [ "misc", "physics" ]
     },
     {
       "url": "https://osa1.net/rss.xml",
@@ -219,6 +219,30 @@
     {
       "url": "https://blog.guillaume-gomez.fr/rss",
       "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://simonwillison.net/atom/everything/",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://annas-archive.org/blog/rss.xml",
+      "tags": [ "misc", "archiving" ]
+    },
+    {
+      "url": "https://quuxplusone.github.io/blog/feed.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://blog.tanyakhovanova.com/?feed=rss",
+      "tags": [ "math" ]
+    },
+    {
+      "url": "https://gregorygundersen.com/feed.xml",
+      "tags": [ "math", "ml" ]
+    },
+    {
+      "url": "https://statisticaloddsandends.wordpress.com/feed.xml",
+      "tags": [ "math", "probability" ]
     }
   ]
 }
