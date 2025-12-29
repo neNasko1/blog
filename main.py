@@ -55,6 +55,7 @@ class Blog(BaseModel):
 
     @model_validator(mode="after")
     def compute_fields(self):
+        print("parsing ", self.url)
         try:
             self.maybe_compute_fields()
         except Exception as e:

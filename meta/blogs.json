@@ -243,6 +243,46 @@
     {
       "url": "https://statisticaloddsandends.wordpress.com/feed.xml",
       "tags": [ "math", "probability" ]
+    },
+    {
+      "url": "https://subscribeopenly.net/subscribe/?url=https://jamesg.blog/feeds/posts.xml",
+      "tags": [ "cs", "misc", "programming" ]
+    },
+    {
+      "url": "https://blog.yossarian.net/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://nadrieril.github.io/blog/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://www.htmhell.dev/feed_tips.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://gaultier.github.io/blog/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://unnamed.website/index.xml",
+      "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://grossack.site/feed.xml",
+      "tags": [ "math" ]
+    },
+    {
+      "url": "https://yosefk.com/blog/feed",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://yosefk.com/blog/feed",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://maurycyz.com/index.xml",
+      "tags": [ "misc" ]
     }
   ]
 }
