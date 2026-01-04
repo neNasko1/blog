@@ -58,13 +58,13 @@ class Blog(BaseModel):
 
     def get_last_articles(
         self,
-        minimum: int = 5,
-        last: int = 10,
+        minimum: int = 3,
+        last_month_max: int = 5,
         timeframe: timedelta = timedelta(days=31),
     ) -> List[Article]:
         srt_articles = sorted(self.articles, key=lambda x: x.date, reverse=True)
         relevant = sum(1 for x in srt_articles if datetime.now() - x.date <= timeframe)
-        to_show = max(minimum, min(last, relevant))
+        to_show = max(minimum, max(last_month_max, relevant))
         return srt_articles[:to_show]
 
 
