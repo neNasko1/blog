@@ -43,8 +43,8 @@ class Blog(BaseModel):
 
     async def load(self):
         try:
-            print("parsing", self.url)
             rss = await asyncio.to_thread(feedparser.parse, self.url)
+            print("parsed", self.url)
 
             feed = rss.feed
             self.title = feed.title if getattr(feed, "title", "") else self.url
@@ -59,12 +59,12 @@ class Blog(BaseModel):
     def get_last_articles(
         self,
         minimum: int = 3,
-        last_month_max: int = 5,
+        last_month_maximum: int = 5,
         timeframe: timedelta = timedelta(days=31),
     ) -> List[Article]:
         srt_articles = sorted(self.articles, key=lambda x: x.date, reverse=True)
         relevant = sum(1 for x in srt_articles if datetime.now() - x.date <= timeframe)
-        to_show = max(minimum, max(last_month_max, relevant))
+        to_show = max(minimum, min(last_month_maximum, relevant))
         return srt_articles[:to_show]
 
 
