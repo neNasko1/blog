@@ -277,12 +277,64 @@
       "tags": [ "cs", "programming" ]
     },
     {
-      "url": "https://yosefk.com/blog/feed",
+      "url": "https://maurycyz.com/index.xml",
+      "tags": [ "misc" ]
+    },
+    {
+      "url": "https://claytonwramsey.com/blog/",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://daniel.haxx.se/blog/feed/",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://buttondown.com/jaffray/rss",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://flak.tedunangst.com/rss",
       "tags": [ "cs", "programming" ]
     },
     {
-      "url": "https://maurycyz.com/index.xml",
-      "tags": [ "misc" ]
+      "url": "https://wingolog.org/feed/atom",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://chico.dev/feed.xml",
+      "tags": [ "cs", "programming", "algorithms" ]
+    },
+    {
+      "url": "https://loup-vaillant.fr/updates.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://reasonablypolymorphic.com/feed.rss",
+      "tags": [ "math", "programming", "formal" ]
+    },
+    {
+      "url": "https://blog.daniel-beskin.com/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://fasterthanli.me/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://emnudge.dev/blog.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://danilafe.com/index.xml",
+      "tags": [ "cs", "programming", "plt", "formal" ]
+    },
+    {
+      "url": "https://fzakaria.com/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://sbaziotis.com/rss.xml",
+      "tags": [ "cs", "compilers" ]
     }
   ]
 }

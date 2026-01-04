@@ -1,3 +1,4 @@
 https://brainbaking.com/post/2025/10/is-it-worth-it-to-optimize-images-for-your-site/
 https://leancrew.com/all-this/2025/05/mathml-with-pandoc/
 https://leancrew.com/all-this/2025/05/pandas-and-html-tables/
+https://danilafe.com/blog/blog_microfeatures/

@@ -1,4 +1,4 @@
-from pydantic import BaseModel, model_validator, PrivateAttr
+from pydantic import BaseModel, PrivateAttr
 from typing import List, Optional, Any, Dict
 import feedparser
 from pathlib import Path
@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import os
 import argparse
+import asyncio
 
 
 class Article(BaseModel):
@@ -28,7 +29,6 @@ class Article(BaseModel):
             link=entry.link if "link" in entry else None,
         )
         ret._blog = blog
-
         return ret
 
 
@@ -36,30 +36,22 @@ class Blog(BaseModel):
     url: str
     tags: List[str]
 
-    # inferred
+    # loaded
     articles: List[Article] = []
     title: str = ""
     error: Optional[str] = None
 
-    def maybe_compute_fields(self):
-        rss = feedparser.parse(self.url)
-
-        feed = rss.feed
-        if "title" in feed and feed.title != "":
-            self.title = feed.title
-        else:
-            self.title = self.url
-
-        self.articles = [Article.from_entry(self, entry) for entry in rss.entries]
-        return self
-
-    @model_validator(mode="after")
-    def compute_fields(self):
-        print("parsing ", self.url)
+    async def load(self):
         try:
-            self.maybe_compute_fields()
+            print("parsing", self.url)
+            rss = await asyncio.to_thread(feedparser.parse, self.url)
+
+            feed = rss.feed
+            self.title = feed.title if getattr(feed, "title", "") else self.url
+            self.articles = [Article.from_entry(self, entry) for entry in rss.entries]
+
         except Exception as e:
-            print("failed ", self.url)
+            print("failed", self.url)
             self.error = str(e)
 
         return self
@@ -71,9 +63,7 @@ class Blog(BaseModel):
         timeframe: timedelta = timedelta(days=31),
     ) -> List[Article]:
         srt_articles = sorted(self.articles, key=lambda x: x.date, reverse=True)
-        relevant = sum(
-            [1 for x in srt_articles if datetime.now() - x.date <= timeframe]
-        )
+        relevant = sum(1 for x in srt_articles if datetime.now() - x.date <= timeframe)
         to_show = max(minimum, min(last, relevant))
         return srt_articles[:to_show]
 
@@ -81,17 +71,17 @@ class Blog(BaseModel):
 class BlogRoll(BaseModel):
     blogs: List[Blog]
 
-    @model_validator(mode="after")
-    def compute_fields(self):
-        dedup_blogs = []
+    async def load(self):
+        dedup = {}
         for blog in self.blogs:
-            if any(blog.url == other.url for other in dedup_blogs):
-                print("removed duplicate: ", blog.url)
-                continue
+            if blog.url not in dedup:
+                dedup[blog.url] = blog
+            else:
+                print("removed duplicate:", blog.url)
 
-            dedup_blogs.append(blog)
+        self.blogs = list(dedup.values())
 
-        self.blogs = dedup_blogs
+        await asyncio.gather(*(blog.load() for blog in self.blogs))
         return self
 
     def get_shown_articles(self) -> List[Article]:
@@ -104,7 +94,7 @@ class BlogRoll(BaseModel):
         return sorted(unsorted, key=lambda x: x.date, reverse=True)
 
     @property
-    def forwarded_info(self) -> Dict[Any]:
+    def forwarded_info(self) -> Dict[Any, Any]:
         shown_articles = self.get_shown_articles()
         return {
             "articles": {
@@ -114,14 +104,16 @@ class BlogRoll(BaseModel):
             },
             "blogs": {
                 "success": len([x for x in self.blogs if x.error is None]),
-                "all": len([x for x in self.blogs]),
+                "all": len(self.blogs),
             },
         }
 
 
-def generate_blog_roll(blog_roll_url: str):
+async def generate_blog_roll(blog_roll_url: str):
     blogs_json = Path(blog_roll_url).read_text()
     blog_roll = BlogRoll.model_validate_json(blogs_json)
+
+    await blog_roll.load()
 
     os.makedirs("static", exist_ok=True)
     env = Environment(loader=FileSystemLoader("meta/templates"))
@@ -140,10 +132,9 @@ def generate_blog_roll(blog_roll_url: str):
 def main():
     parser = argparse.ArgumentParser(description="generate blog")
     parser.add_argument("blog_roll", help="path to blog roll")
-
     args = parser.parse_args()
 
-    generate_blog_roll(args.blog_roll)
+    asyncio.run(generate_blog_roll(args.blog_roll))
 
 
 if __name__ == "__main__":
