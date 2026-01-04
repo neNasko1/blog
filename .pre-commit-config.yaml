@@ -14,6 +14,6 @@ repos:
     name: pre-commit
     stages: [pre-commit, pre-push]
     language: system
-    entry: pixi run ruff format main.py
+    entry: pixi run ruff format src
     types: [python]
     pass_filenames: false
