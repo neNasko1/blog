@@ -115,10 +115,10 @@ async def generate_blog_roll(blog_roll_url: str):
 
     await blog_roll.load()
 
-    os.makedirs("static/meta", exist_ok=True)
+    os.makedirs("static", exist_ok=True)
     env = Environment(loader=FileSystemLoader("templates"))
 
-    with open("static/meta/blog_roll.html", "w+") as f:
+    with open("static/blog_roll.html", "w+") as f:
         template = env.get_template("blog_roll.jinja2")
         output = template.render(blog_info=blog_roll.forwarded_info)
         f.write(output)

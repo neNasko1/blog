@@ -4,6 +4,7 @@ import os
 import shutil
 from typing import List
 import argparse
+import math
 
 
 def convert_markdown(source_md: Path, target_html: Path) -> None:
@@ -27,7 +28,11 @@ def compile_dir(source_dir: Path, output_dir: Path, force: bool) -> None:
     post_name = source_dir.stem
     post_dir = output_dir / post_name
 
-    if max(get_times(source_dir)) < min(get_times(post_dir)) and not force:
+    if (
+        max(get_times(source_dir), default=-math.inf)
+        < min(get_times(post_dir), default=math.inf)
+        and not force
+    ):
         print(f"Skipping {source_dir}")
         return
 
@@ -76,7 +81,7 @@ def main():
     )
     args = parser.parse_args()
 
-    compile_all(Path("meta"), Path("static/meta"), args.force)
+    compile_all(Path("blog"), Path("static"), args.force)
 
 
 if __name__ == "__main__":
