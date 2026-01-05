@@ -18,9 +18,9 @@ class Article(BaseModel):
     @staticmethod
     def from_entry(blog: "Blog", entry: Any):
         entry_timestamp = (
-            entry.updated_parsed
-            if "updated_parsed" in entry
-            else entry.published_parsed
+            entry.published_parsed
+            if "published_parsed" in entry
+            else entry.updated_parsed
         )
 
         ret = Article(
