@@ -1,0 +1,340 @@
+{
+  "blogs": [
+    {
+      "url": "https://scottaaronson.blog/?feed=rss2",
+      "tags": [ "cs", "complexity", "quantum" ]
+    },
+    {
+      "url": "https://bernsteinbear.com/feed.xml",
+      "tags": [ "cs", "compilers"]
+    },
+    {
+      "url": "https://www.dogeystamp.com/atom.xml",
+      "tags": [ "cs", "algorithms" ]
+    },
+    {
+      "url": "https://terrytao.wordpress.com/feed/",
+      "tags": [ "math", "research", "ml", "formal" ]
+    },
+    {
+      "url": "https://austinhenley.com/blog/feed.rss",
+      "tags": [ "cs", "ml" ]
+    },
+    {
+      "url": "https://dotat.at/@/blog.atom",
+      "tags": [ "cs", "optimization" ]
+    },
+    {
+      "url": "https://matklad.github.io/feed.xml",
+      "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://buttondown.com/hillelwayne/rss",
+      "tags": [ "cs", "logic" ]
+    },
+    {
+      "url": "https://railsatscale.com/feed.xml",
+      "tags": [ "cs", "compilers" ]
+    },
+    {
+      "url": "https://www.brendangregg.com/blog/rss.xml",
+      "tags": [ "cs", "systems" ]
+    },
+    {
+      "url": "https://strongly-typed-thoughts.net/blog/feed",
+      "tags": [ "cs", "plt" ]
+    },
+    {
+      "url": "https://ohadravid.github.io/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://brainbaking.com/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://functional.computer/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://curiouscoding.nl/posts/index.xml",
+      "tags": [ "cs", "algorithms", "research" ]
+    },
+    {
+      "url": "https://xeiaso.net/blog.rss",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://blog.genesmindsmachines.com/feed",
+      "tags": [ "cs", "ml" ]
+    },
+    {
+      "url": "https://susam.net/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://zayenz.se/rss.xml",
+      "tags": [ "cs", "algorithms", "formal" ]
+    },
+    {
+      "url": "https://davidlattimore.github.io/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://tonsky.me/atom.xml",
+      "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://purplesyringa.moe/blog/feed.rss",
+      "tags": [ "cs", "algorithms", "programming" ]
+    },
+    {
+      "url": "https://wickstrom.tech/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://slightknack.dev/atom.xml",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://andrewkelley.me/rss.xml",
+      "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://nibblestew.blogspot.com/feeds/posts/default",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://defn.io/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://sbaziotis.com/rss.xml",
+      "tags": [ "cs", "compilers" ]
+    },
+    {
+      "url": "https://www.stephendiehl.com/feed.xml",
+      "tags": [ "cs", "compilers", "plt" ]
+    },
+    {
+      "url": "https://11011110.github.io/blog/feed.xml",
+      "tags": [ "cs", "algorithms", "research" ]
+    },
+    {
+      "url": "https://windowsontheory.org/feed/",
+      "tags": [ "cs", "complexity", "research" ]
+    },
+    {
+      "url": "https://blog.computationalcomplexity.org/feeds/posts/default",
+      "tags": [ "cs", "complexity", "research" ]
+    },
+    {
+      "url": "https://semantic-domain.blogspot.com/feeds/posts/default",
+      "tags": [ "cs", "complexity", "research" ]
+    },
+    {
+      "url": "https://www.nearly42.org/",
+      "tags": [ "cs", "complexity", "research" ]
+    },
+    {
+      "url": "https://lemire.me/blog/feed/",
+      "tags": [ "cs", "compilers", "research", "lowlevel" ]
+    },
+    {
+      "url": "https://gilkalai.wordpress.com/",
+      "tags": [ "cs", "complexity", "research" ]
+    },
+    {
+      "url": "https://www.johndcook.com/blog/feed/",
+      "tags": [ "math" ]
+    },
+    {
+      "url": "https://matt.might.net/articles/feed.rss",
+      "tags": [ "cs", "compilers", "plt" ]
+    },
+    {
+      "url": "https://tigerbeetle.com/blog/atom.xml",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://smallcultfollowing.com/babysteps//atom.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://jyn.dev/atom.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://typesanitizer.com/blog/index.html",
+      "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://glfmn.io/atom.xml",
+      "tags": [ "cs", "graphics" ]
+    },
+    {
+      "url": "https://transactional.blog/feed.xml",
+      "tags": [ "cs", "databases", "compilers" ]
+    },
+    {
+      "url": "https://www.scattered-thoughts.net/atom.xml",
+      "tags": [ "cs", "databases", "plt", "compilers" ]
+    },
+    {
+      "url": "https://mmapped.blog/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://cofault.com/feed.xml",
+      "tags": [ "cs", "formal" ]
+    },
+    {
+      "url": "https://doisinkidney.com/rss.xml",
+      "tags": [ "cs", "formal", "algorithms", "research" ]
+    },
+    {
+      "url": "https://leancrew.com/all-this/feed/",
+      "tags": [ "misc", "physics" ]
+    },
+    {
+      "url": "https://osa1.net/rss.xml",
+      "tags": [ "cs", "plt" ]
+    },
+    {
+      "url": "https://xania.org/feed",
+      "tags": [ "cs", "compilers", "lowlevel" ]
+    },
+    {
+      "url": "https://emschwartz.me/feed/?type=rss",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://blog.veritates.love/rss.xml",
+      "tags": [ "cs", "formal", "programming" ]
+    },
+    {
+      "url": "https://amit.prasad.me/rss.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://blog.guillaume-gomez.fr/rss",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://simonwillison.net/atom/everything/",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://annas-archive.org/blog/rss.xml",
+      "tags": [ "misc", "archiving" ]
+    },
+    {
+      "url": "https://quuxplusone.github.io/blog/feed.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://blog.tanyakhovanova.com/?feed=rss",
+      "tags": [ "math" ]
+    },
+    {
+      "url": "https://gregorygundersen.com/feed.xml",
+      "tags": [ "math", "ml" ]
+    },
+    {
+      "url": "https://statisticaloddsandends.wordpress.com/feed.xml",
+      "tags": [ "math", "probability" ]
+    },
+    {
+      "url": "https://subscribeopenly.net/subscribe/?url=https://jamesg.blog/feeds/posts.xml",
+      "tags": [ "cs", "misc", "programming" ]
+    },
+    {
+      "url": "https://blog.yossarian.net/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://nadrieril.github.io/blog/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://www.htmhell.dev/feed.xml?y=122024",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://gaultier.github.io/blog/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://unnamed.website/index.xml",
+      "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://grossack.site/feed.xml",
+      "tags": [ "math" ]
+    },
+    {
+      "url": "https://yosefk.com/blog/feed",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://maurycyz.com/index.xml",
+      "tags": [ "misc" ]
+    },
+    {
+      "url": "https://claytonwramsey.com/blog/",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://daniel.haxx.se/blog/feed/",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://buttondown.com/jaffray/rss",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://flak.tedunangst.com/rss",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://wingolog.org/feed/atom",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://chico.dev/feed.xml",
+      "tags": [ "cs", "programming", "algorithms" ]
+    },
+    {
+      "url": "https://loup-vaillant.fr/updates.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://reasonablypolymorphic.com/feed.rss",
+      "tags": [ "math", "programming", "formal" ]
+    },
+    {
+      "url": "https://blog.daniel-beskin.com/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://fasterthanli.me/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://emnudge.dev/blog.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://danilafe.com/index.xml",
+      "tags": [ "cs", "programming", "plt", "formal" ]
+    },
+    {
+      "url": "https://fzakaria.com/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://sbaziotis.com/rss.xml",
+      "tags": [ "cs", "compilers" ]
+    }
+  ]
+}
