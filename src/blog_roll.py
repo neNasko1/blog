@@ -130,7 +130,7 @@ async def generate_blog_roll(blog_roll_url: str):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="generate blog")
+    parser = argparse.ArgumentParser(description="generate blog roll")
     parser.add_argument("blog_roll", help="path to blog roll")
     args = parser.parse_args()
 

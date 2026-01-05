@@ -1,9 +1,8 @@
-<!--
-{
-  "title": "Fancy blog tech",
-  "lang": "en",
-}
--->
+---
+title: Fancy Blog Tech
+lang: en
+date: "2026-01-04"
+---
 
 # Heading
 
@@ -29,4 +28,6 @@ def a():
     return 100
 
 print(10 + a())
+
+very_long = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 ```

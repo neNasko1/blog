@@ -3,6 +3,7 @@ from pathlib import Path
 import os
 import shutil
 from typing import List
+import argparse
 
 
 def convert_markdown(source_md: Path, target_html: Path) -> None:
@@ -10,20 +11,23 @@ def convert_markdown(source_md: Path, target_html: Path) -> None:
         markdown = f.read()
 
     html = pypandoc.convert_text(
-        markdown, to="html", format="markdown+raw_html", extra_args=["--mathml"]
+        markdown,
+        to="html",
+        format="markdown+raw_html",
+        extra_args=["--mathml", "--template=templates/pandoc.html"],
     )
 
     with open(target_html, "w+") as f:
         f.write(html)
 
 
-def compile_dir(source_dir: Path, output_dir: Path) -> None:
+def compile_dir(source_dir: Path, output_dir: Path, force: bool) -> None:
     os.makedirs(output_dir, exist_ok=True)
 
     post_name = source_dir.stem
     post_dir = output_dir / post_name
 
-    if max(get_times(source_dir)) < min(get_times(post_dir)):
+    if max(get_times(source_dir)) < min(get_times(post_dir)) and not force:
         print(f"Skipping {source_dir}")
         return
 
@@ -54,7 +58,7 @@ def get_times(dir: Path) -> List[float]:
     return [p.stat().st_ctime for p in dir.rglob("*")]
 
 
-def compile_all(source_dir: Path, output_dir: Path) -> None:
+def compile_all(source_dir: Path, output_dir: Path, force: bool) -> None:
     for item in os.listdir(source_dir):
         full_name = os.path.join(source_dir, item)
         full_path = Path(full_name)
@@ -62,7 +66,18 @@ def compile_all(source_dir: Path, output_dir: Path) -> None:
         if not full_name.endswith(".md") and not os.path.isdir(full_path):
             continue
 
-        compile_dir(full_path, output_dir)
+        compile_dir(full_path, output_dir, force)
 
 
-compile_all(Path("meta"), Path("static/meta"))
+def main():
+    parser = argparse.ArgumentParser(description="generate blog")
+    parser.add_argument(
+        "force", help="force all blogs to recompile", nargs="?", const=False
+    )
+    args = parser.parse_args()
+
+    compile_all(Path("meta"), Path("static/meta"), args.force)
+
+
+if __name__ == "__main__":
+    main()
