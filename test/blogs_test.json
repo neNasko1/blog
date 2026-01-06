@@ -1,8 +1,4 @@
 {
   "blogs": [
-    {
-      "url": "https://xania.org/feed",
-      "tags": [ "cs", "compilers" ]
-    }
   ]
 }
