@@ -25,5 +25,5 @@ jobs:
       - run: pixi run generate-blog-roll blog/blog_roll.json
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: static
+          path: final
       - uses: actions/deploy-pages@v4

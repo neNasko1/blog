@@ -1,0 +1,16 @@
+.anchor {
+    color: inherit;
+}
+.anchor::before {
+    content: "(#)";
+    display: inline-block;
+    opacity: 0;
+    padding-left: 0.2em;
+    text-decoration: none;
+}
+h1:hover > .anchor::before,
+h2:hover > .anchor::before,
+h3:hover > .anchor::before,
+h4:hover > .anchor::before {
+    opacity: 1;
+}

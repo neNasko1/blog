@@ -15,7 +15,16 @@ def convert_markdown(source_md: Path, target_html: Path) -> None:
         markdown,
         to="html",
         format="markdown+raw_html",
-        extra_args=["--mathml", "--template=templates/pandoc.html"],
+        extra_args=[
+            "--mathml",
+            "--template=templates/pandoc.html",
+            "--lua-filter",
+            "src/pandoc_filters.lua",
+            "--embed-resources",
+            "--standalone",
+            "--css",
+            "blog/static/post.css",
+        ],
     )
 
     with open(target_html, "w+") as f:
@@ -52,6 +61,9 @@ def compile_dir(source_dir: Path, output_dir: Path, force: bool) -> None:
         source_md = source_dir
         target_html = post_dir / "index.html"
 
+    if str(source_dir).endswith("static"):
+        return
+
     shutil.copy(source_md, post_dir / "raw.md")
     convert_markdown(source_md, target_html)
 
@@ -81,7 +93,7 @@ def main():
     )
     args = parser.parse_args()
 
-    compile_all(Path("blog"), Path("static"), args.force)
+    compile_all(Path("blog"), Path("final"), args.force)
 
 
 if __name__ == "__main__":
