@@ -335,6 +335,38 @@
     {
       "url": "https://sbaziotis.com/rss.xml",
       "tags": [ "cs", "compilers" ]
+    },
+    {
+      "url": "https://rushter.com/blog/feed",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://lukefleed.xyz/rss.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://cekrem.github.io/posts/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://finnvolkel.com/feed.xml",
+      "tags": [ "cs", "programming", "databases" ]
+    },
+    {
+      "url": "https://kobzol.github.io/feed.xml",
+      "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "https://blog.glyph.im/feeds/all.atom.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://remy.wang/blog/feed.rss",
+      "tags": [ "cs", "programming", "algorithms" ]
+    },
+    {
+      "url": "https://aartaka.me/rss.xml",
+      "tags": [ "cs", "programming", "plt" ]
     }
   ]
 }
