@@ -24,6 +24,8 @@ def convert_markdown(source_md: Path, target_html: Path) -> None:
             "--standalone",
             "--css",
             "blog/static/post.css",
+            "-M",
+            "document-css=true",
         ],
     )
 
@@ -89,7 +91,7 @@ def compile_all(source_dir: Path, output_dir: Path, force: bool) -> None:
 def main():
     parser = argparse.ArgumentParser(description="generate blog")
     parser.add_argument(
-        "force", help="force all blogs to recompile", nargs="?", const=False
+        "--force", help="force all blogs to recompile", action="store_true"
     )
     args = parser.parse_args()
 
