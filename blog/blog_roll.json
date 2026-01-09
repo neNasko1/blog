@@ -109,10 +109,6 @@
       "tags": [ "cs", "programming" ]
     },
     {
-      "url": "https://sbaziotis.com/rss.xml",
-      "tags": [ "cs", "compilers" ]
-    },
-    {
       "url": "https://www.stephendiehl.com/feed.xml",
       "tags": [ "cs", "compilers", "plt" ]
     },
@@ -154,7 +150,7 @@
     },
     {
       "url": "https://tigerbeetle.com/blog/atom.xml",
-      "tags": [ "cs", "programming", "databases" ]
+      "tags": [ "cs", "programming", "databases", "corp" ]
     },
     {
       "url": "https://smallcultfollowing.com/babysteps//atom.xml",
@@ -226,7 +222,7 @@
     },
     {
       "url": "https://annas-archive.org/blog/rss.xml",
-      "tags": [ "misc", "archiving" ]
+      "tags": [ "misc", "archiving", "corp" ]
     },
     {
       "url": "https://quuxplusone.github.io/blog/feed.xml",
@@ -367,6 +363,30 @@
     {
       "url": "https://aartaka.me/rss.xml",
       "tags": [ "cs", "programming", "plt" ]
+    },
+    {
+      "url": "https://ziglang.org/devlog/index.xml",
+      "tags": [ "cs", "programming", "lowlevel", "plt", "corp" ]
+    },
+    {
+      "url": "https://blog.janestreet.com/feed.xml",
+      "tags": [ "cs", "programming", "lowlevel", "plt", "corp", "quant" ]
+    },
+    {
+      "url": "https://mechanicalmarkets.wordpress.com/feed/",
+      "tags": [ "math", "quant" ]
+    },
+    {
+      "url": "https://qoppac.blogspot.com/feeds/posts/default",
+      "tags": [ "math", "stats", "quant" ]
+    },
+    {
+      "url": "https://epchan.blogspot.com/feeds/posts/default",
+      "tags": [ "math", "stats", "quant" ]
+    },
+    {
+      "url": "https://www.chrisarmstrong.dev/feed.xml",
+      "tags": [ "cs", "programming" ]
     }
   ]
 }
