@@ -4,13 +4,13 @@ lang: en
 date: "2026-01-04"
 ---
 
-# Heading
+# Blog info
 
-## Heading 2
+Personal blog of Atanas Dimitrov.
 
-### Heading 3
+## Math
 
-Math is supported: $3 = 1 + 2$
+Math is supported through the use of the `MathML` standard: $3 = 1 + 2$
 
 Inline $\sum_{i=1}^{n} i = \frac{n (n + 1)}{2}$.
 
@@ -20,6 +20,10 @@ $$
 $$
 
 For $a_{i} = a_{i - 1} + \frac{1}{2^{i}}$ we have $\lim_{i \rightarrow \infty} a_{i} = 2$.
+
+## Code
+
+Code is also supported and includes the default `pandoc` syntax highlighting.
 
 ```python
 def a():
