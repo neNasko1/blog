@@ -13,3 +13,12 @@ date: "2026-01-01"
 
 # Complexity
 - [Complexity Zoo](https://complexityzoo.net/Complexity_Zoo)
+- [Is P=NP](https://www.scottaaronson.com/papers/pnp.pdf)
+
+# Notes
+- [Hilbert spaces](https://www-users.cse.umn.edu/~garrett/m/fun/notes_2016-17/01_hsp.pdf)
+
+# Games
+## Puzzles
+- [enclose.horse](https://enclose.horse/)
+- [minutecryptic](https://www.minutecryptic.com)

@@ -387,6 +387,50 @@
     {
       "url": "https://www.chrisarmstrong.dev/feed.xml",
       "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://www.chrisarmstrong.dev/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://abhinavsarkar.net/all.atom",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://xnacly.me/posts/index.xml",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://research.swtch.com/feed.atom",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://elixir-lang.org/atom.xml",
+      "tags": [ "cs", "programming", "compilers", "plt", "corp" ]
+    },
+    {
+      "url": "https://barish.me/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://samwho.dev/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://www.npopov.com/rss.xml",
+      "tags": [ "cs", "programming", "compilers", "lowlevel" ]
+    },
+    {
+      "url": "https://techne98.com/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://savannah.dev/index.xml",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://nullprogram.com/feed/",
+      "tags": [ "cs", "programming", "lowlevel" ]
     }
   ]
 }
