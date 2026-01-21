@@ -431,6 +431,38 @@
     {
       "url": "https://nullprogram.com/feed/",
       "tags": [ "cs", "programming", "lowlevel" ]
+    },
+    {
+      "url": "http://feeds.feedburner.com/ThoughtsFromTheRedPlanet",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://nickgeorge.net/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://blog.yiningkarlli.com/feeds/posts/default/index.xml",
+      "tags": [ "cs", "programming", "lowlevel", "graphics" ]
+    },
+    {
+      "url": "https://alexschroeder.ch/view/index.rss",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://shape-of-code.com/feed/",
+      "tags": [ "cs", "stats", "ml" ]
+    },
+    {
+      "url": "https://futhark-lang.org/atom.xml",
+      "tags": [ "cs", "programming", "plt", "compilers", "corp" ]
+    },
+    {
+      "url": "https://www.gingerbill.org/article/index.xml",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://blog.chromium.org/feeds/posts/default",
+      "tags": [ "cs", "programming", "lowlevel", "corp" ]
     }
   ]
 }

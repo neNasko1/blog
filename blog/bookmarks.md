@@ -20,5 +20,6 @@ date: "2026-01-01"
 
 # Games
 ## Puzzles
-- [enclose.horse](https://enclose.horse/)
+- [enclose.horse](https://enclose.horse)
 - [minutecryptic](https://www.minutecryptic.com)
+- [uncrossy](https://uncrossy.com)
