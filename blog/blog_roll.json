@@ -463,6 +463,18 @@
     {
       "url": "https://blog.chromium.org/feeds/posts/default",
       "tags": [ "cs", "programming", "lowlevel", "corp" ]
-    }
+    },
+    {
+      "url": "https://entropicthoughts.com/feed",
+      "tags": [ "math", "misc", "probability" ]
+    },
+    {
+      "url": "https://pyrefly.org/blog/rss.xml",
+      "tags": [ "cs", "plt", "corp" ]
+    },
+    {
+      "url": "https://elijahpotter.dev/rss.xml",
+      "tags": [ "cs", "misc" ]
+    },
   ]
 }
