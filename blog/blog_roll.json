@@ -389,10 +389,6 @@
       "tags": [ "cs", "programming" ]
     },
     {
-      "url": "https://www.chrisarmstrong.dev/feed.xml",
-      "tags": [ "cs", "programming" ]
-    },
-    {
       "url": "https://abhinavsarkar.net/all.atom",
       "tags": [ "cs", "programming", "compilers" ]
     },
@@ -475,6 +471,50 @@
     {
       "url": "https://elijahpotter.dev/rss.xml",
       "tags": [ "cs", "misc" ]
+    },
+    {
+      "url": "https://00f.net/atom.xml",
+      "tags": [ "cs", "lowlevel" ]
+    },
+    {
+      "url": "https://jamesoswald.dev/posts/index.xml",
+      "tags": [ "cs", "formal" ]
+    },
+    {
+      "url": "https://jakubtomsu.github.io/posts/index.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://eli.thegreenplace.net/feed/",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://blog.yoshuawuyts.com/rss.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://willhbr.net/feed.xml",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://www.philipzucker.com/feed.xml",
+      "tags": [ "cs", "programming", "formal" ]
+    },
+    {
+      "url": "https://mcyoung.xyz/feed.xml",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://www.hmpcabral.com/atom.xml",
+      "tags": [ "cs", "programming", "compilers" ]
+    },
+    {
+      "url": "https://mchav.github.io/feed.xml",
+      "tags": [ "cs", "math", "programming" ]
+    },
+    {
+      "url": "https://abuseofnotation.github.io/feed.xml",
+      "tags": [ "math" ]
     }
   ]
 }
