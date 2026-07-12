@@ -515,6 +515,62 @@
     {
       "url": "https://abuseofnotation.github.io/feed.xml",
       "tags": [ "math" ]
+    },
+    {
+      "url": "https://www.mattkeeter.com/atom.xml",
+      "tags": [ "cs", "lowlevel" ]
+    },
+    {
+      "url": "https://shkspr.mobi/blog/feed/atom",
+      "tags": [ "misc" ]
+    },
+    {
+      "url": "https://www.jeremykun.com/",
+      "tags": [ "cs", "math", "algorithms" ]
+    },
+    {
+      "url": "https://kristerw.github.io/feed.xml",
+      "tags": [ "cs", "lowlevel" ]
+    },
+    {
+      "url": "https://www.arp242.net/",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://blog.happyfellow.dev/feed/?type=rss",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://dystroy.org/blog/",
+      "tags": [ "cs", "lowlevel" ]
+    },
+    {
+      "url": "https://lukeplant.me.uk/blog/atom/index.xml",
+      "tags": [ "cs", "plt" ]
+    },
+    {
+      "url": "https://lisyarus.github.io/blog/",
+      "tags": [ "cs", "programming" ]
+    },
+    {
+      "url": "https://jank-lang.org/blog/feed.xml",
+      "tags": [ "cs", "plt", "lowlevel", "corp" ]
+    },
+    {
+      "url": "http://feeds2.feedburner.com/PetrMitrichev",
+      "tags": [ "cs", "algorithms" ]
+    },
+    {
+      "url": "https://mariusbancila.ro/blog/feed/",
+      "tags": [ "cs", "lowlevel", "plt" ]
+    },
+    {
+      "url": "https://rahul.gopinath.org/feed.xml",
+      "tags": [ "cs", "algorithms", "complexity" ]
+    },
+    {
+      "url": "https://tratt.net/laurie/news.rss",
+      "tags": [ "cs", "lowlevel" ]
     }
   ]
 }

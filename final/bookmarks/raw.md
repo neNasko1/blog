@@ -25,6 +25,10 @@ date: "2026-01-01"
 - [enclose.horse](https://enclose.horse)
 - [minutecryptic](https://www.minutecryptic.com)
 - [uncrossy](https://uncrossy.com)
+- [cluesbysam](https://cluesbysam.com)
+
+# Privacy
+- [Information since you arrived](https://sinceyouarrived.world/taken)
 
 # Notes
 - [Hilbert spaces](https://www-users.cse.umn.edu/~garrett/m/fun/notes_2016-17/01_hsp.pdf)
